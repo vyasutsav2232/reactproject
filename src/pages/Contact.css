@@ -1,0 +1,85 @@
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  resize: vertical;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.btns {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background: rgba(225, 218, 218, 0.144);
+  transition: width 2s, height 2s, transform 2s;
+  
+}
+ 
+
+
+input[type=submit]:hover {
+  background-color: #dbe608;
+}
+
+.cont {
+  
+  background-color: #f7eded;
+  padding: 70px;
+  align-items: center;
+justify-content: center;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+align-items: center;
+justify-content: center;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+  align-items: center;
+justify-content: center;
+
+}
+
+/* Clear floats after the columns */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+  align-items: center;
+justify-content: center;
+
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.box input {
+  margin-left: 80px;
+}
